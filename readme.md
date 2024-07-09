@@ -21,11 +21,10 @@ This project demonstrates how to use genetic algorithms to solve a quadratic equ
 
 ## Features
 
-- Binary encoding of individuals
-- Uniform crossover to produce offspring
+- Binary encoding and decoding of individuals
+- Two point crossover to produce offspring
 - Mutation to introduce variability
-- Roulette wheel selection for choosing parents
-- Fitness function based on the quadratic equation `3x^2 - 11x + 4`
+- Fitness function based on the quadratic equation `x^2 - 49`
 
 ## Installation (Jupyter)
 
@@ -34,20 +33,12 @@ To run this project locally, follow these steps:
 ### 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/genetic-algorithm-quadratic-equation.git
-   cd genetic-algorithm-quadratic-equation
+   git clone https://github.com/ronishg27/Genetic-algorithm
+   cd Genetic-algorithm
    ```
 
-### 2. Create a virtual environment (optional but recommended):
 
-   It's good practice to use virtual environments to isolate project dependencies.
-
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate   # On Windows use `venv\Scripts\activate`
-   ```
-
-### 3. Install Jupyter Notebook and dependencies:
+### 2. Install Jupyter Notebook and dependencies:
 
    Install Jupyter Notebook and other dependencies using `pip`.
 
@@ -56,7 +47,7 @@ To run this project locally, follow these steps:
    ```
 
 
-### 4. Start Jupyter Notebook:
+### 3. Start Jupyter Notebook:
 
    Launch Jupyter Notebook to run the genetic algorithm notebook.
 
@@ -64,23 +55,18 @@ To run this project locally, follow these steps:
    jupyter notebook
    ```
 
-### 5. Open the notebook:
+### 4. Open the notebook:
 
    Navigate to the `genetic_algo.ipynb` file in your Jupyter Notebook interface and open it to execute the genetic algorithm code.
 
-### 6. Run the genetic algorithm:
+### 5. Run the genetic algorithm:
 
    Follow the instructions within the notebook to run the genetic algorithm and view results.
 
-### 7. Shutdown Jupyter Notebook:
+### 6. Shutdown Jupyter Notebook:
 
    Once finished, you can shutdown Jupyter Notebook by pressing `Ctrl + C` in the terminal where it's running and confirming the shutdown.
 
-### 8. Deactivate virtual environment (if used):
-
-   ```bash
-   deactivate   # Only if you used a virtual environment
-   ```
 ## Algorithm Details
 ### Fitness Function
   The fitness function evaluates how close a given solution is to the actual solution of the quadratic equation:
